@@ -134,8 +134,8 @@ public class OrderRepository {
             time = Math.max(orderMap.get(orderNo).getDeliveryTime(),time);
 
         String ans = "";
-        int minutes = time % 100;
-        int hour = (time/100)/60;
-        return ans = hour + "" + minutes;
+        int hour = time / 60;
+        int minutes = time - (hour*60);
+        return ans = hour + ":" + minutes;
     }
 }

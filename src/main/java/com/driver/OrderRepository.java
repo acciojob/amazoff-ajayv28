@@ -136,6 +136,6 @@ public class OrderRepository {
         String ans = "";
         int minutes = time % 100;
         int hour = (time/100)/60;
-        return ans = hour + ":" + minutes;
+        return ans = hour + "" + minutes;
     }
 }

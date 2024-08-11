@@ -9,7 +9,11 @@ import org.springframework.stereotype.Service;
 public class OrderService {
 
     @Autowired
+<<<<<<< HEAD
     OrderRepository orderRepository;try
+=======
+    OrderRepository orderRepository;
+>>>>>>> 6c70723143be6b94822981792cdcacd039a58b66
 
     public void addOrder(Order order){
         orderRepository.saveOrder(order);
